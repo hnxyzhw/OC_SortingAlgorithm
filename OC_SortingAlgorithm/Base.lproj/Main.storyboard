@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fHH-3K-lIW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--排序算法-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVn-Fy-AcC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="选择排序算法">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.050980392159999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="87" width="90" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="selectSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTy-H9-D5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8r-GC-6dE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="插入排序算法">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.050980392159999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="148" y="87" width="90" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="insertSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nM-ks-BV0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P02-xU-3sh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="希尔排序算法">
+                                    <color key="titleColor" red="0.98431372549999996" green="0.050980392159999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="276" y="87" width="90" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="shellSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jaz-4u-slK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="运算结果：" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8DK-O7-XlU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="135" width="240" height="225"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="算法简介：" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-rt-VqK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="386" width="240" height="202"/>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-6t-7Sq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="运算次数"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="141" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="calculated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16t-qf-THQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zVn-Fy-AcC"/>
+                                <exclude reference="c8r-GC-6dE"/>
+                                <exclude reference="P02-xU-3sh"/>
+                                <exclude reference="8DK-O7-XlU"/>
+                                <exclude reference="xPa-rt-VqK"/>
+                                <exclude reference="IbK-6t-7Sq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="zVn-Fy-AcC"/>
+                                <include reference="c8r-GC-6dE"/>
+                                <include reference="P02-xU-3sh"/>
+                                <include reference="8DK-O7-XlU"/>
+                                <include reference="xPa-rt-VqK"/>
+                                <include reference="IbK-6t-7Sq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="排序算法" id="nPr-mL-Oso"/>
+                    <connections>
+                        <outlet property="calculateCount" destination="IbK-6t-7Sq" id="r57-tY-7zM"/>
+                        <outlet property="insertSortBtn" destination="c8r-GC-6dE" id="Bwx-7Y-iVk"/>
+                        <outlet property="methodDesTextView" destination="xPa-rt-VqK" id="Htf-8A-bZe"/>
+                        <outlet property="resultTextView" destination="8DK-O7-XlU" id="RNm-jt-5RB"/>
+                        <outlet property="selectSortBtn" destination="zVn-Fy-AcC" id="Iqo-94-g6g"/>
+                        <outlet property="shellSortBtn" destination="P02-xU-3sh" id="TZ0-sP-Abf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="-438"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kiS-gE-9ah">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHH-3K-lIW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="505-Sl-NaT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aiT-as-9s4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqx-iS-Q3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="-438"/>
+        </scene>
+    </scenes>
+</document>
